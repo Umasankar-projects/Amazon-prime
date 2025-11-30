@@ -29,7 +29,7 @@ docker --version
 # Install Sonarqube (as image)
 docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
 
-# Install Trivy
+# Install Trivy.
 sudo apt-get install -y wget apt-transport-https gnupg
 wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | gpg --dearmor | sudo tee /usr/share/keyrings/trivy.gpg > /dev/null
 echo "deb [signed-by=/usr/share/keyrings/trivy.gpg] https://aquasecurity.github.io/trivy-repo/deb generic main" | sudo tee -a /etc/apt/sources.list.d/trivy.list
